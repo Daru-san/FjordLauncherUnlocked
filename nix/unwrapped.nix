@@ -15,6 +15,7 @@
   zlib,
   msaClientID ? null,
   libarchive,
+  pkg-config,
 }:
 
 let
@@ -66,6 +67,7 @@ stdenv.mkDerivation {
     kdePackages.extra-cmake-modules
     jdk17
     stripJavaArchivesHook
+    pkg-config
   ];
 
   buildInputs = [
